@@ -1,3 +1,4 @@
+<?php include("form.php") ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,24 +20,25 @@
 
     </header>
     <main>
-        <div class="pi"></div>
-        <div class="banner">
-            <div class="contact-text">
-                <h1>CONTACT</h1>
+        <section>
+            <div class="pi"></div>
+            <div class="banner">
+                <div class="contact-text">
+                    <h1>CONTACT</h1>
+                </div>
+                <div class="image-logo">
+                    <img src="images/logo-resized.png" alt="" id="logo">
+                </div>
+                <div class="contact-text">
+                    <h1>FORM</h1>
+                </div>
             </div>
-            <div class="image-logo">
-                <img src="images/logo-resized.png" alt="" id="logo">
-            </div>
-            <div class="contact-text">
-                <h1>FORM</h1>
-            </div>
-        </div>
+        </section>
         <section class="container">
-
-            <form class="col s12">
+            <form class="col s12" method="POST" action="<?php htmlspecialchars($_SERVER['PHP_SELF']) ?>">
                 <div class="row">
                     <div class="input-field col s6">
-                        <input class="validate" type="text" name="Firstname" id="firstname">
+                        <input class="validate" type="text" name="Firstname" id="firstname" value="<?php echo secure_input($_POST["first_name"]) ?>">
                         <label for="firstname">First Name</label>
                     </div>
                     <div class="input-field col s6">
