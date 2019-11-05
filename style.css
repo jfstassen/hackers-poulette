@@ -1,0 +1,70 @@
+@font-face {
+    font-family: Bellota;
+    src: url("fonts/Bellota-Regular.otf");
+  }
+  body{
+      font-family: Bellota;
+  }
+#gender{
+    display: flex;
+    justify-content: space-evenly;
+}
+#gender span{
+    padding-left: 23px;
+}
+#gender .male span:after{
+    border: 2px solid rgb(46, 46, 168);
+    background-color: rgb(46, 46, 168);
+}
+#gender .male [type="radio"]:not(:checked)+span:before{
+    border: 2px solid rgb(46, 46, 168);
+}
+#gender .female span:after{
+    border: 2px solid rgb(189, 97, 201);
+    background-color: rgb(189, 97, 201);
+}
+#gender .female [type="radio"]:not(:checked)+span:before{
+    border: 2px solid rgb(189, 97, 201);
+}
+#gender .binary span:after{
+    border: 2px solid rgb(110, 110, 112);
+    background-color: rgb(110, 110, 112);
+}
+#gender .binary [type="radio"]:not(:checked)+span:before{
+    border: 2px solid rgbargb(110, 110, 112);
+}
+
+
+.pi{
+    position: absolute;
+    right:0px;
+    z-index: -3;
+    width: 400px;
+    height: 600px;
+    background-image: url("images/Raspberry_Pi_4_Model_B_-_Side.png");
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom:20px;
+}
+h1{
+    background-color: #666666;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(138, 77, 77, 0.5) 0px 3px 3px;
+    line-height: initial;
+    margin: initial;
+}
+.contact-text{
+    width: 320px;
+}
+.contact-text:nth-of-type(1) h1{
+    text-align: right;
+}
