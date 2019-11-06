@@ -61,9 +61,9 @@
                             </label>
                         </p>
                         <p>
-                            <label class="binary">
-                                <input value="binary" name="gender" type="radio" />
-                                <span>Binary</span>
+                            <label class="non-binary">
+                                <input value="non-binary" name="gender" type="radio" />
+                                <span>Non-Binary</span>
                             </label>
                         </p>
                     </div>
