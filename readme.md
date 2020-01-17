@@ -3,5 +3,5 @@
 
 🚨🚨🚨 Project is still under development 🚨🚨🚨
 
-![Image]()
-[Deployed on netlify](https://inspiring-feynman-e692f2.netlify.com/)
+![Image](https://i.imgur.com/3aaI2wn.png)
+[Deployed on Heroku](https://hackers-poulette-becode.herokuapp.com/)
